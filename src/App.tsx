@@ -1,9 +1,9 @@
 import "./index.css";
 import React, { useEffect, useState, useRef } from "react";
 
-const App = () => {
-  const [count, setCount] = useState(0);
-  const countRef = useRef(count);
+const App: React.FC = () => {
+  const [count, setCount] = useState<number>(0);
+  const countRef = useRef<number>(count);
 
   // Within the first useEffect hook, whenever the count value changes, the ref value
   // countRef.current is updated to match the latest count value. This ensures that the ref
